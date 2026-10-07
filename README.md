@@ -21,7 +21,7 @@ Four new changeset attributes, `teams`, `releases`, `keywords`, and `conditions`
 Add the `@` operator to any of these filters for strict matching, so a filter selects only changesets with the exact value. Teams can deploy one release’s changes, one team’s changes, or one flagged subset from a shared changelog without maintaining parallel context and label schemes, and validate `--strict` checks the new attributes for typos before anything runs. These new attributes are also included in `status --verbose=true` output:
 
 ``` bash
-liquibase status --verbose=true
+% liquibase status --verbose=true
 ####################################################
 ##   _     _             _ _                      ##
 ##  | |   (_)           (_) |                     ##
@@ -58,7 +58,7 @@ Liquibase Secure license issued to Liquibase_CS_Team, valid until Wed Dec 30 00:
 INFO: For more concise 'status' output, drop the '--verbose' flag
 Liquibase command 'status' was executed successfully.
 
-liquibase status --conditions-filter=@prebuild --teams-filter=@blue
+% liquibase status --conditions-filter=@prebuild --teams-filter=@blue
 ####################################################
 ##   _     _             _ _                      ##
 ##  | |   (_)           (_) |                     ##
