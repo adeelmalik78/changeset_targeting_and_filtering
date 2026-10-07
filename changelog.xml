@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
+
+
+  <changeSet id="customer" author="amalik" 
+      labels="customer" 
+      context="dev,qa,prod" 
+      teams="blue" 
+      releases="1.0" 
+      keywords="bank1" 
+      conditions="prebuild">
+    <sqlFile path="sql/100_ddl/customers.sql" />
+  </changeSet>
+
+  <changeSet id="employee" author="amalik" 
+      labels="employee" 
+      context="dev,qa,prod" 
+      teams="green" 
+      releases="1.1" 
+      keywords="payments" 
+      conditions="prebuild">
+    <sqlFile path="sql/100_ddl/employees.sql" />
+  </changeSet>
+
+    <changeSet id="contractor" author="amalik" >
+    <sqlFile path="sql/100_ddl/contractors.sql" />
+  </changeSet>
+
+</databaseChangeLog>
+
