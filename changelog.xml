@@ -24,11 +24,11 @@
       teams="green" 
       releases="1.1" 
       keywords="payments" 
-      conditions="prebuild">
+      conditions="postbuild">
     <sqlFile path="sql/100_ddl/employees.sql" />
   </changeSet>
 
-    <changeSet id="contractor" author="amalik" >
+  <changeSet id="contractor" author="amalik" >
     <sqlFile path="sql/100_ddl/contractors.sql" />
   </changeSet>
 

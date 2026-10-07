@@ -57,4 +57,26 @@ Liquibase Secure license issued to Liquibase_CS_Team, valid until Wed Dec 30 00:
      changelog.xml::contractor::amalik
 INFO: For more concise 'status' output, drop the '--verbose' flag
 Liquibase command 'status' was executed successfully.
+
+liquibase status --conditions-filter=@prebuild --teams-filter=@blue
+####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Taking Liquibase to production?               ##
+##  liquibase.com/liquibase-secure                ## 
+##                                                ##
+####################################################
+Starting Liquibase Secure at 13:20:28 using Java 21.0.12.1 (version 6.0.0 #70 built at 2026-09-29 19:26:40 UTC)
+Liquibase Secure Version: 6.0.0
+Liquibase Secure license issued to Liquibase_CS_Team, valid until Wed Dec 30 00:00:00 CST 2026 WARNING: This Liquibase Secure license expires on 2026-12-30, in 84 days.
+1 changeset has not been applied to postgres@jdbc:postgresql://localhost:5432/postgres
+     changelog.xml::customer::amalik
+Liquibase command 'status' was executed successfully.
 ``` 
